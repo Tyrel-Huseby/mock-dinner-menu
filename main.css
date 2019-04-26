@@ -1,0 +1,151 @@
+html {
+	font-family: 'Nunito', sans-serif;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-image: url("images/menu-background.png"); 
+	background-repeat: repeat-y;
+	background-size: 100% 100%;
+}
+
+b {
+	font-size: 1.3em;
+}
+
+.sticky-choices{
+	background-color: rgb(255, 255, 240, .8); /*ivory*/
+	width: 100vw - 15px;
+	height: 175px;
+	position: sticky;
+	top: 0;
+	border: 5px solid #DAA520;
+	border-radius: 5px;
+	z-index: 2; 
+}
+.sticky-choices h1{
+	text-align: center;
+	font-size: 2.2em;
+	margin: 20px 0px;
+	height: 50px;
+}
+.sticky-choices p{
+	text-align: center;
+	font-size: 1em;
+	margin: 5px 0px;
+	
+}
+
+#choices-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 60px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50px;
+	padding: 0px 60px;
+}
+
+.choice {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+	background: #FFB6C1;
+	cursor: pointer;
+}
+
+#menu{
+	margin: 100px;
+	background: #d3b39ccc;
+	border: 5px solid ivory;
+}
+
+.server{
+	font-family: 'Roboto', sans-serif;
+	display: none;
+	margin-left: 25px;
+	width: 55%;
+	min-width: 250px;
+	z-index: 1;
+	
+}
+
+.server p, .server h2, .server h3, .server h4{
+	width: 400px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#entrees, #sides{
+	margin: 50px;
+}
+
+.items{
+	border-top: 3px solid #FFD700;
+}
+.items h2{
+	margin: 12.5px 0px;
+}
+ 
+.image {
+	margin-bottom: 51px;
+	width: 400px;
+	height: 300px;
+}
+
+.image img{
+	width: 400px;
+	height: 300px;
+}
+
+.image:hover {
+	display: flex;
+	
+}
+
+.image:hover img{
+	opacity: .6;
+	cursor: pointer;
+}
+
+
+.image:hover > .server{
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-gap: 60px;
+	align-items: center;
+	text-align: center;	
+}
+
+
+#total{
+	height: 55px;
+	width: 100%;
+	background: ivory;
+	position: sticky;
+	bottom: 0;
+	margin: 0px;
+	border-top: 5px solid #d3b39c;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn {
+	margin-left: 25px;
+	padding: 7px 15px;
+	font-family: 'Open Sans', sans-serif;
+	background: #40220C;
+	color: ivory;
+	font-size: 1.3em;
+	border: none;
+	cursor: pointer;
+}
+#total h1{
+
+	margin: 0px;
+	height: 50px;
+	text-align: center;
+}

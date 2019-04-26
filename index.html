@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Shogun Steakhouse and Resturant</title>
+    
+    <link rel="stylesheet" href="main.css">
+		<link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Roboto" rel="stylesheet">
+    <style>
+      
+  </style>
+  
+</head>
+
+	<body>
+		<div class = "sticky-choices">
+			<p>Click Menu Image to add to your order. Click selection in this box to deselect item</p>
+			<h1>Your order as of now is:</h1><!--  temp -->
+			<div id = "choices-wrapper">
+				<div class = "choice" onclick = "removeFromChoice(this)">
+					
+				</div>
+				<div class = "choice" onclick = "removeFromChoice(this)">
+					
+				</div>
+				<div class = "choice" onclick = "removeFromChoice(this)">
+					
+				</div>
+			</div>
+		</div>
+		<div id = "menu">
+			<div id = "entrees">
+				<h1>Entrées: <span style="font-size: .6em;">each comes with two sides</span></h1>
+				<div class = "items">
+					<h2>Beef Bowl</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+							<img src = "images/entree-beef-bowl.jpeg">
+						<div class = "server">
+							<div>
+								<p>
+									A bowl of shreaded beef, mixed with kale, spring onion, water chestnuts, and toppings of your choice.
+									
+								</p>
+								<h3>$21.99</h3>
+							</div>
+							<div>
+									<p>
+										<b>Recommened sides are Miso Soup and the Spring Rolls and Dumplings.</b>
+									</p>
+							</div>	
+						</div>
+
+					</div>	
+				</div>
+				<div class = "items">
+					<h2>Grilled Steak</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+							<img src = "images/entree-grilled-steak.jpeg">
+						<div class = "server">
+							<div>
+								<p>
+									An 8 oz steak (with a squirt of sake over it) and sides are cooked right in front of you, if in the proper areas.	
+									 <br><br>
+									 NOTE: Chef will ask you how done you want it if you are getting cooked in front of.
+								</p>
+								<h3>$25.99</h3>
+							</div>
+							<div>
+									<p>
+										<b>Recommened sides are the Fried Dumplings and Fried Rice.</b>
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "items">
+					<h2>Salmon Plate</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+							<img src = "images/entree-salmon.jpeg">
+						<div class = "server">
+							<div>
+								<p>
+										Three 4 oz cuts of Salmon steam cooked on the grill. 
+										
+								</p>
+								<h3>$29.99</h3>
+							</div>
+							<div>
+									<p>
+										<b>Recommened sides are Miso Soup and Fried Rice.</b>
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "items">
+					<h2>Marinaded Steak Chunks</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+						<img src = "images/entree-soy-marinade-steak.jpeg">
+					
+						<div class = "server">
+							<div>
+							<p>
+									Chunks of Steak that were marinaded in soy sauce overnight, 
+									and cooked in front of you if avaliable. 
+									
+							</p>
+							<h3>$25.99</h3>
+							</div>
+							<div>
+									<p>
+										<b>Recommened sides are Fried Dumplings and Spring Rolls and Dumplings</b>
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<div id = "sides">
+				<h1>Sides</h1>
+				<div class = "items">
+					<h2>Fried Dumplings</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+						<img src = "images/side-fried-dumpling.jpeg">
+					
+						<div class = "server">
+							<div>
+								<p>
+									Battered dumplings air fried and served with a sake based sauce.
+									
+							  </p>
+							  <h2>Stand alone price:</h2>
+								<h4>$4.99</h4>
+							</div>
+							<div>
+									<p><b>Recommened with the Grilled Steak or the Marinaded Steak Chunks</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "items">
+					<h2>Fried Rice</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+						<img src = "images/side-fried-rice.jpeg">
+					
+						<div class = "server">
+							<div>
+								<p>
+										Rice cooked on the grill and mixed with scrambled eggs, peas, onions, kale, and cubed carrots.
+								</p>
+								<h2>Stand alone price:</h2>
+								<h4>$3.95</h4>
+							</div>
+							<div>
+									<p><b>Recommened with the Salmon Plate or the Grilled Steak</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "items">
+					<h2>Miso Soup</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+						<img src = "images/side-miso-soup.jpeg">
+					
+						<div class = "server">
+							<div>
+								<p>
+									Our thicker variant of the traditional soup of Japan. Topped with chives and spring onion.	
+								</p>
+								<h2>Stand alone price:</h2>
+								<h4>$3.99</h4>
+							</div>
+							<div>
+									<p><b>Recommened with the Salmon Plate or the Beef Bowl</b></p>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class = "items">
+					<h2>Spring Rolls and Dumplings</h2>
+					<div class = "image" onclick = "doOnClick(this)">
+						<img src = "images/side-spring-rolls-and-dumplings.jpeg">
+					
+						<div class = "server">
+							<div>
+								<p>
+										Rolls filled with shrimp, carrots, lettuce, and cucumber sliced relatively thin.
+										Served with a spicy almond dipping sauce and three rice flour dumplings.	
+								</p>
+								<h2>Stand alone price:</h2>
+								<h4>$5.99</h4>
+							</div>
+							<div>
+									<p><b>Recommened with the Marinaded Steak Chunks or the Beef Bowl</b></p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id = "total">
+			<h1>Your total is $0</h1>
+			<button class = "btn">Place Order</button>
+		</div>
+	</body>
+
+	<script src="main.js"></script>
+
+</html>
